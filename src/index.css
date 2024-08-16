@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: "Roboto", sans-serif !important;
+}
+
+.active{
+    position: relative;
+    color: #AE8240;
+    transition: all 1s ease;
+}
+
+.active::after{
+    content: '';
+    width: 85%;
+    height: 3px;
+    background-color: #AE8240;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1s ease;
+}
